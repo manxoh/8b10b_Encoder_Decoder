@@ -6,6 +6,6 @@ rm -rf work
 
 vlib work
 
-vlog encode.v decode.v validate_8b10b.v
+vlog -mfcu encode.v decode.v validate_8b10b.v
 
 vsim -voptargs="+acc" test_8b10b -do "run -all"
